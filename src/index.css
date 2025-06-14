@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bgDark: #1a1a1a;
+  --bgDark2: #2d2d2d;
+}
+
+.bg-bgDark {
+  background-color: var(--bgDark);
+}
+
+.bg-bgDark2 {
+  background-color: var(--bgDark2);
+}
+
+body {
+  background-color: var(--bgDark2);
+  color: white;
+}
+
+/* Custom Toast Styles */
+.Toastify__toast {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border: 1px solid #3d3d3d !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.Toastify__toast-body {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.Toastify__progress-bar {
+  background: #3b82f6 !important;
+}
+
+.Toastify__toast--success {
+  border-left: 4px solid #22c55e !important;
+}
+
+.Toastify__toast--error {
+  border-left: 4px solid #ef4444 !important;
+}
+
+.Toastify__toast--warning {
+  border-left: 4px solid #f59e0b !important;
+}
+
+.Toastify__close-button {
+  color: white !important;
+  opacity: 0.7 !important;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
